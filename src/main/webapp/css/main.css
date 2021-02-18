@@ -1,0 +1,43 @@
+.navbar{
+    background-color: mediumaquamarine;
+    border-color: mediumaquamarine;
+}
+.navbar > .container-fluid > div > .navbar-nav > li > nav-link {
+    font-size: larger;
+}
+.navbar > .container-fluid > div > .navbar-nav > li > a {
+    color: black;
+    font-weight: bold;
+}
+.navbar > .container-fluid > div > .navbar-nav > li > a:hover {
+    color: gold;
+    font-weight: bold;
+}
+.navbar > .container-fluid > .navbar-brand{
+    font-weight: bold;
+}
+
+
+.card > .card-header {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+}
+
+.errors {
+    color: red;
+}
+
+input-form {
+    width: 100%;
+}
+.input-form > div {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
