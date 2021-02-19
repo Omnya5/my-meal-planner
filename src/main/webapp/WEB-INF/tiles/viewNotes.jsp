@@ -28,7 +28,6 @@
                 </c:if>
                 </c:forEach>
         </div>
-
         <div class="card">
             <div class="card-header">
                 <h4>List of notes:</h4>

@@ -12,10 +12,6 @@
 
 <div class="row">
     <div class="col-md-8 offset-2">
-        note: <%= request.getAttribute("note") %> <br/>
-        jsp object: <%= this %> -- <%= this.getClass()%> <br/>
-        latest note: <%= request.getAttribute("latestNote")%> <br/>
-
         <div class="card">
             <div class="card-header">
                 <h4>Add a note</h4>
@@ -39,7 +35,6 @@
             <div class="card-body">
                 <c:out value="${latestNote.text}" />
             </div>
-
         </div>
     </div>
 </div>

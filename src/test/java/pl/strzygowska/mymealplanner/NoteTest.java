@@ -25,12 +25,9 @@ public class NoteTest {
     @Test
     public void testSave() {
         Note note = new Note("This is a test saving note.");
-
         noteDao.save(note);
-
         assertNotNull("Non-null ID", note.getId());
         assertNotNull("Non-null Date", note.getAdded());
-
         Note retrieved = noteDao.findById(note.getId()).orElse(new Note());
         assertEquals("Matching Note", note, retrieved);
     }
@@ -39,14 +36,12 @@ public class NoteTest {
     public void testFindLatest(){
         Calendar calendar = Calendar.getInstance();
         Note lastNote = null;
-
         for(int i=0; i<10; i++) {
             calendar.add(Calendar.DAY_OF_YEAR, 1);
             Note note = new Note("Status update " + i, calendar.getTime());
             noteDao.save(note);
             lastNote = note;
         }
-
         Note retrieved = noteDao.findFirstByOrderByAddedDesc();
         assertEquals("Latest note update", lastNote, retrieved);
     }
